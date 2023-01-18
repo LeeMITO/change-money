@@ -1,0 +1,446 @@
+@charset "UTF-8";
+
+
+.wrapper {
+    width: 100%;
+    height: 100vh;
+    /* background-color: aqua; */
+    
+}
+
+.header {
+    /* background-color: #044326; */
+    border-bottom: 2px solid black;
+    width: 100%;
+    height: 120px;
+    padding-left: 100px;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    width: 100%;
+    height: calc(100vh - 68px);
+    background-color:coral;
+}
+.clear {
+    clear: both;
+}
+/* 경고창 */
+.xWindow {
+    width: 100%;
+    height: 1335px;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    top: 120px;
+    left: 0%;
+    z-index: 10;
+    display: none;
+}
+.contentBox {
+    width: 500px;
+    height: 300px;
+    background-color: white;
+    border: 30px solid rgba(0, 0, 0, 0.5);
+    /* border-radius: 10px; */
+    z-index: 10;
+    font-size: 28px;
+    font-weight: 600;
+    text-align: center;
+    line-height: 200px;
+    margin-top: 30%;
+    margin-left: 40%;
+}
+.closeBtn {
+    width: 70px;
+    height: 40px;
+    font-size: 20px;
+    border-radius: 20px;
+    text-align: center;
+    display: block;
+    margin-left:45%;
+    border: #d40511;
+    color: #fff;
+    background-color: #d40511;
+}
+.closeBtn:hover {
+    cursor: pointer;
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
+/* ==============메뉴 선택============== */
+.menuBox {
+    background-color: #fff;
+    width: 60%;
+    
+}
+.food-menu {
+    text-align: center;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    width: 100%;
+    height: calc(100vh - 68px);
+    padding-left: 5%;
+    overflow-y: scroll;
+    /* background-color: azure; */
+}
+.food-menu::-webkit-scrollbar {
+    display: none;
+}
+
+ul.click-menu {
+    /* background-color: ; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    width: 25%;
+    margin: 3%;
+    padding: 3%;
+    font-size: 1.2rem;
+    cursor: pointer;
+    box-shadow: 1px 1px 4px gray;
+    z-index: 3;
+}
+ul.click-menu:hover {
+    background-color: #fff8d7;
+    font-weight: 600;
+}
+
+.click-menu img {
+    width: 100%;
+}
+
+/*=========== 주문 내역 ===========*/
+.priceBox {
+    position: absolute;
+    top: 120px;
+    right: 0;
+    width: 40%;
+    height: calc(100vh - 68px);
+    background-color: #fff;
+    text-align: center;
+}
+.priceList {
+    width: 90%;
+    margin: 3% 10%;
+    margin-left: 0;
+    height: 95%;
+    background-color: #fff8d7;
+    border: 1px solid #044326;
+}
+.listTitle {
+    width: 100%;
+    height: 100px;
+    line-height: 110px;
+    text-align: center;
+    font-size: 1.8vw;
+    color: white;
+    border-bottom: 1px solid #044326;
+    background-color: #044326;
+}
+.listProduct {
+    width: 100%;
+    height: 80%;
+    /* margin-top: 1rem; */
+    font-size: 1.3rem;
+    /* background-color:beige; */
+    overflow-y: scroll;
+}
+.listProduct::-webkit-scrollbar {
+    display: none;
+}
+.listProduct > section {
+    width: 100%;
+    /* border-bottom: 1px solid #d40511; */
+    margin-top: 1rem;
+    /* background-color: aquamarine; */
+}
+.flexBox {
+    width: 100%;
+    height: 100px;
+    /* background-color:blueviolet; */
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+    padding-top: 5px;
+}
+.del-btn {
+    margin-left: 30%;
+    padding: 0 7px;
+    font-size: 1.5rem;
+    border-radius: 50px;
+    background-color: black;
+    cursor: pointer;
+    color: #fff;
+}
+.del-btn:hover {
+    background-color: #d40511;
+}
+.food-img {
+    width: 100%;
+    height: 100%;
+    /* background-color: #027351; */
+}
+.list-count-btn {
+    /* background-color: #027351; */
+    width: 30%;
+    height: 30px;
+    margin-top: 4%;
+    line-height: 30px;
+    padding: 0 auto;
+}
+.product-count {
+    margin: 0 20px;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.product-price {
+    width: 30%;
+    height: 30px;
+    margin-top: 4%;
+    line-height: 30px;
+    padding: 0 auto;
+    /* background-color: #027351; */
+}
+.product-total-price {
+    width: 50%;
+    font-weight: 600;
+    /* background-color: beige; */
+}
+.product-price span:nth-child(2) {
+    width: 20%;
+    padding-left: 1%;
+    font-weight: 500;
+    /* background-color: beige; */
+}
+
+/* ============ 금액박스 ============ */
+.textBox {
+    position: relative;
+}
+.textBox > div {
+    background-color: #fff;
+    border-top: 1px solid black;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 150px;
+}
+.signBox {
+    /* background-color: rgba(0, 0, 0, 0.8); */
+    width: 400px;
+    height: 150px;
+    margin-left: 100px;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    border-top: 0;
+    color: black;
+    text-align: center;
+}
+.signBox:first-child {
+    margin-left: 0;
+}
+.totalText,
+.chargeText,
+.changeText {
+    margin: 20px;
+    text-align: center;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #d40511;
+    font-size: 24px;
+    color: #027351;
+    font-weight: 600;
+}
+.totalBox,
+.chargeBox,
+.firstResul {
+    margin-left: 100px;
+    float: left;
+    line-height: 55px;
+    /* background-color: aqua; */
+    width: 100px;
+    height: 50px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: black;
+}
+.signBox p {
+    line-height: 55px;
+    font-size: 24px;
+}
+
+/*========== 거스름돈 ==========*/
+.resultBox {
+    position: relative;
+    width: 100%;
+    height: 360px;
+    background-color: #044326;
+}
+.moneyBox {
+    position: absolute;
+    top:10px;
+    left:100px;
+    white-space: nowrap;
+    width: 630px;
+    height: 300px;
+    background-color: #027351;
+    border-radius: 10px;
+    margin-top: 10px;
+    
+}
+.m50000 {
+    width: 125px;
+    margin-top: 40px;
+    /* height: 270px; 
+    position: absolute; 
+    top: 10px;
+    left: 30px; */
+}
+.m10000 {
+    width: 125px;
+    /* height: 270px;
+    position: absolute;
+    top: 10px;
+    left: 220px; */
+
+}
+.m5000 {
+    width: 125px;
+    /* height: 250px;
+    position: absolute;
+    top: 20px;
+    left: 430px; */
+}
+.m1000 {
+    width: 125px;
+    /* height: 250px;
+    position: absolute;
+    top: 20px;
+    left: 640px; */
+}
+.m500 {
+    width: 15%;
+    position: absolute;
+    top: 100px;
+    left: 520px;
+} 
+.m100 {
+    width: 15%;
+    /* position: absolute;
+    top: 150px;
+    left: 830px; */
+}
+.m50000:hover,
+.m10000:hover,
+.m5000:hover,
+.m1000:hover,
+.m500:hover,
+.m100:hover {
+    cursor: pointer;
+    scale: 0.95;
+    rotate: 10deg;
+    transition: all 0.5s;
+}
+
+.resultText {
+    background-color: rgba(0,0,0, 0.8);
+    position: absolute;
+    left: 800px;
+    top: 0;
+    width: 450px;
+    height: 300px;
+    border-radius: 10px;
+}
+.allMoneyBox {
+    /* background-color: aquamarine; */
+    width: 380px;
+    height: 280px;
+    display: flex;
+    font-size: 24px;
+    font-weight: 600;
+    position: relative;
+    top:10px;
+    line-height: 30px;
+    margin-left: 10px;
+    z-index: 1;
+}
+.allText1 {
+    width: 190px;
+    height: 280px;
+    float: left;
+    font-size: 30px;
+    right: 115px;
+    color: white;
+    font-weight: 500;
+    line-height: 64px;
+    cursor: default;
+    margin-top: 15px;
+    margin-left: 10px;
+    /* background-color: #ffcb08; */
+}    
+.allText2 {
+    width: 190px;
+    height: 280px;
+    display: inline-block;
+    font-size: 30px;
+    right: 115px;
+    color: white;
+    font-weight: 500;
+    line-height: 64px;
+    cursor: default;
+    margin-top: 15px;
+    margin-left: 20px;
+    /* background-color: #fff8d7; */
+}  
+
+.btn {
+    text-align: center;
+    /* background-color: #fff; */
+    position: absolute;
+    top: 130px;
+    right: 0px;
+    width: 500px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    z-index: 20;
+}
+.payment-btn {
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
+    color: black;
+    background-color: #ffcb08;
+    border-radius: 10px;
+    margin-right: 20px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.clear-btn {
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
+    color: black;
+    background-color: #ffcb08;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.payment-btn:hover,
+.clear-btn:hover {
+    background-color: #d40511;
+    font-weight: 600;
+    color:#fff;
+    transition: all 0.4s;
+}
+
+.countinfo {
+    display: none;
+}
+

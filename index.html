@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="./js/jquery.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="https://kit.fontawesome.com/df5971e9bf.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="./img/favicon.ico">
+    <title>Preppers_change</title>
+</head>
+
+<body>
+    <section class="xWindow">
+        <article class="contentBox">
+            <button class="closeBtn">확인</button>
+        </article>
+    </section>
+    <div class="wrapper">
+        <div class="header">
+            <img class="scroll_logo fixed_transform" src="./img/프레퍼스 다이어트 푸드 로고.png"
+                alt="프레퍼스 다이어트 푸드" style="max-width: 100%; height: 100px; margin: 10px;" />
+        </div>
+        <div class="main">
+            <section class="menuBox">
+                <div class="food-menu">
+                    <ul class="click-menu Img1">
+                        <li class="food-img"><img src="./img/치킨 플레이트.png" alt="치킨플레이트" width="238px" height="175px" ></li>
+                        <li><span>치킨 플레이트</span></li>
+                        <li><span>5,900</span></li>
+                    </ul>
+                    <ul class="click-menu Img2">
+                        <li class="food-img"><img src="./img/포크 플레이트.png" alt="포크플레이트" width="238px" height="175px" ></li>
+                        <li><span>포크 플레이트</span></li>
+                        <li><span>7,900</span></li>
+                    </ul>
+                    <ul class="click-menu Img3">
+                        <li class="food-img"><img src="./img/비프 플레이트.png" alt="비프플레이트" width="238px" height="175px" ></li>
+                        <li><span>비프 플레이트</span></li>
+                        <li><span>10,900</span></li>
+                    </ul>
+                    <ul class="click-menu Img4">
+                        <li class="food-img"><img src="./img/치킨 데리야끼 덮밥.png" alt="치킨데리야끼덮밥" width="238px" height="175px" ></li>
+                        <li><span>치킨 데리야끼 덮밥</span></li>
+                        <li><span>6,900</span></li>
+                    </ul>
+                    <ul class="click-menu Img5">
+                        <li class="food-img "><img src="./img/포크 명이나물 덮밥.png" alt="포크명이나물덮밥" width="238px" height="175px" ></li>
+                        <li><span>포크 명이나물 덮밥</span></li>
+                        <li><span>8,900</span></li>
+                    </ul>
+                    <ul class="click-menu Img6">
+                        <li class="food-img"><img src="./img/비프 와사비 덮밥.png" alt="비프와사비덮밥" width="238px" height="175px" ></li>
+                        <li><span>비프 와사비 덮밥</span></li>
+                        <li><span>11,900</span></li>
+                    </ul>
+                    <ul class="click-menu Img7">
+                        <li class="food-img"><img src="./img/무지방 그릭 요거트.png" alt="무지방그릭요거트" width="130px" height="200px" ></li>
+                        <li><span>무지방 그릭 요거트</span></li>
+                        <li><span>4,900</span></li>
+                    </ul>
+                    <ul class="click-menu Img8">
+                        <li class="food-img"><img src="./img/아미노 드링크.png" alt="아미노드링크" width="130px" height="200px" >
+                        </li>
+                        <li><span>아미노 드링크</span></li>
+                        <li><span>2,500</span></li>
+                    </ul>
+                    <ul class="click-menu Img9">
+                        <li class="food-img"><img src="./img/프로틴 쉐이크.png" alt="프로틴쉐이크" width="130px" height="200px" >
+                        </li>
+                        <li><span>프로틴 쉐이크</span></li>
+                        <li><span>4,500</span></li>
+                    </ul>
+                </div>
+            </section>
+            <section class="priceBox">
+                <div class="priceList">
+                    <div class="listTitle">주문내역(Order list)</div>
+                    <div class="listProduct"></div>
+                </div>
+            </section>
+            <div class="clear"></div>
+        </div>
+        <!-- 금액 -->
+        <section class="textBox">
+            <div>
+                <section class="signBox">
+                    <article class="totalText">총 금액</article>
+                    <article class="totalBox" id="totalBox"></article>
+                    <p>원</p>
+                </section>
+                <section class="signBox">
+                    <div class="chargeText">지불한 금액</div>
+                    <div class="chargeBox" id="chargeBox"></div>
+                    <p>원</p>
+                </section>
+                <section class="signBox">
+                    <article class="changeText">거스름돈</article>
+                    <article class="firstResul" id="firstResul"></article>
+                    <p class="won3">원</p>
+                </section>
+            </div>
+            <span class="countinfo">
+                <span class="numberBox1"></span>
+                <span class="numberBox2"></span>
+                <span class="numberBox3"></span>
+                <span class="numberBox4"></span>
+                <span class="numberBox5"></span>
+                <span class="numberBox6"></span>
+                <span class="numberBox7"></span>
+                <span class="numberBox8"></span>
+                <span class="numberBox9"></span>
+            </span>
+        </section>
+        <div class="clear"></div>
+        <!-- 거스름돈장수 -->
+        <section class="resultBox">
+            <div class="moneyBox">
+                <img  src="./img/money50000.png" alt="50000" class="m50000">
+                <img  src="./img/money10000.png" alt="10000" class="m10000">
+                <img  src="./img/money5000.png" alt="5000" class="m5000">
+                <img  src="./img/money1000.png" alt="1000" class="m1000">
+                <img  src="./img/money500.png" alt="500" class="m500">
+                <img  src="./img/money100.png" alt="100" class="m100">
+            
+                <div class="resultText">
+                    <div class="allMoneyBox" id="allMoney"></div>
+                </div>
+            </div>
+            <div class="btn">
+                    <div class="payment-btn" id="payBox">결제하기(Pay)</div>
+                    <div class="clear-btn">처음으로(Reset)</div>
+                </div>
+        </section>    
+    </div>
+</body>
+
+</html>
