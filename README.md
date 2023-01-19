@@ -1,4 +1,4 @@
-<center><img src="/img/img.jpg"></center>
+<div align="center"><img src="/img/img.jpg"></center></div>
 
 # get change money
 ## javascript portpolio - 거스름돈 구하는 웹페이지
