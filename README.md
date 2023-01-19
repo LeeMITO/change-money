@@ -1,3 +1,5 @@
+<center><img src="/img/img.jpg"></center>
+
 # get change money
 ## javascript portpolio - 거스름돈 구하는 웹페이지
 * 프레퍼스 샐러드 가게의 이미지를 활용하여 키오스크 형식으로 구현
